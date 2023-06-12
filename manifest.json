@@ -1,11 +1,14 @@
 {
   "manifest_version": 3,
   "name": "清除host cache",
-  "version": "1.0",
   "description": "清除host cache和刷新socket pools，A chrome extension that clears host cache and flushes socket pools",
+  "version": "1.0",
   "action": {
     "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_title": "清除host cache和刷新socket pools"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "permissions": [
     "tabs",
@@ -13,8 +16,5 @@
   ],
   "host_permissions": [
     "chrome://net-internals/*"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+  ]
 }
