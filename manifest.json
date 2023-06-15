@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "清除host cache",
+  "name": "Host Cache Cleaner",
   "description": "清除host cache和刷新socket pools，A chrome extension that clears host cache and flushes socket pools",
   "version": "2.0",
   "action": {
